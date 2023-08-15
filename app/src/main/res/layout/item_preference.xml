@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/space_medium"
+    app:cardCornerRadius="@dimen/space_normal"
+    app:strokeColor="@color/color_divider"
+    app:strokeWidth="@dimen/width_divider">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:padding="@dimen/space_normal">
+
+        <ImageView
+            android:id="@+id/setting_img"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:contentDescription="@string/setting_img"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/vec_manage" />
+
+        <TextView
+            android:id="@+id/setting_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_normal"
+            android:textAlignment="center"
+            android:textAppearance="@style/text_style_med_header02"
+            android:textColor="?attr/colorControlNormal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/setting_img"
+            tools:text="Account Settings" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

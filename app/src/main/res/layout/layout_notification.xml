@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/space_normal"
+    app:cardCornerRadius="@dimen/space_medium"
+    app:strokeColor="@color/color_divider"
+    app:strokeWidth="@dimen/width_divider">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/space_normal">
+
+        <ImageView
+            android:id="@+id/bell_img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/bell"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/assn_name_txt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_normal"
+            android:layout_marginTop="@dimen/space_small"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textAppearance="@style/text_style_med_header01"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/bell_img"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Assignment uploaded" />
+
+        <TextView
+            android:id="@+id/description_txt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_xsmall"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textAppearance="@style/text_style_desc02"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/assn_name_txt"
+            app:layout_constraintTop_toBottomOf="@+id/assn_name_txt"
+            tools:text="English: Essay writing" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

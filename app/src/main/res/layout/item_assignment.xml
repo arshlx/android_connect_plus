@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/space_normal"
+    app:cardCornerRadius="@dimen/space_medium"
+    app:strokeColor="@color/color_divider"
+    app:strokeWidth="1dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:paddingVertical="@dimen/space_normal">
+
+        <TextView
+            android:id="@+id/subject_txt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/space_normal"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textAppearance="@style/text_style_lar_header01"
+            app:layout_constraintEnd_toStartOf="@+id/due_date_txt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="English" />
+
+        <TextView
+            android:id="@+id/assn_name_txt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/space_normal"
+            android:layout_marginTop="@dimen/space_small"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textAppearance="@style/text_style_med_header01"
+            app:layout_constraintEnd_toStartOf="@+id/due_date_txt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/subject_txt"
+            tools:text="Essay writing" />
+
+        <TextView
+            android:id="@+id/due_date_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/space_normal"
+            android:background="@drawable/rounded_rectangle_bg"
+            android:paddingHorizontal="@dimen/space_medium"
+            android:paddingVertical="@dimen/space_xsmall"
+            android:textAppearance="@style/text_style_med_header02"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/subject_txt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="01-10-2022" />
+
+        <LinearLayout
+            android:id="@+id/group_layout"
+            android:layout_width="@dimen/match_constraint"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_small"
+            android:background="@drawable/rounded_rectangle_bg"
+            android:backgroundTint="@color/teal_200"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/space_medium"
+            android:paddingVertical="@dimen/space_xsmall"
+            app:layout_constraintBottom_toBottomOf="@+id/assn_name_txt"
+            app:layout_constraintEnd_toEndOf="@+id/due_date_txt"
+            app:layout_constraintStart_toStartOf="@+id/due_date_txt"
+            app:layout_constraintTop_toBottomOf="@+id/subject_txt">
+
+            <ImageView
+                android:layout_width="@dimen/space_vlarge"
+                android:layout_height="@dimen/space_large"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@string/group_activity_indicator"
+                android:cropToPadding="true"
+                android:src="@drawable/vec_group_work"
+                app:tint="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/space_medium"
+                android:gravity="center_vertical"
+                android:text="@string/group_assn"
+                android:textAppearance="@style/text_style_med_header01"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/description_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/space_normal"
+            android:layout_marginTop="@dimen/space_medium"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textAppearance="@style/text_style_desc02"
+            app:layout_constraintTop_toBottomOf="@+id/assn_name_txt"
+            tools:layout_editor_absoluteX="16dp"
+            tools:text="1700 Words essay" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_fragment_bg"
+    tools:context=".main.PreferencesFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/prefs_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_medium"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:itemCount="4"
+        tools:layout_editor_absoluteX="8dp"
+        tools:listitem="@layout/item_preference" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="@dimen/match_constraint"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/space_normal"
+        android:layout_marginTop="@dimen/space_medium"
+        app:cardCornerRadius="@dimen/space_normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/prefs_recycler"
+        app:strokeColor="@color/color_divider"
+        app:strokeWidth="@dimen/width_divider">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/logout_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingHorizontal="@dimen/space_normal"
+                android:paddingVertical="@dimen/space_medium"
+                android:text="@string/log_out"
+                android:textAppearance="@style/text_style_med_header02"
+                android:textColor="?attr/colorControlNormal"
+                app:drawableStartCompat="@drawable/vec_logout"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <!--<include
+        android:id="@+id/logout_layout"
+        layout="@layout/item_preference"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/space_normal"
+        android:layout_marginVertical="@dimen/space_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prefs_recycler" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

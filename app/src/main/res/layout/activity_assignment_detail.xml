@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/space_normal"
+    tools:context=".main.AssignmentDetailActivity">
+
+    <TextView
+        android:id="@+id/assn_name_txt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/space_normal"
+        android:layout_marginTop="@dimen/space_small"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textAppearance="@style/text_style_med_header01"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Essay writing" />
+
+    <TextView
+        android:id="@+id/due_date_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_medium"
+        android:background="@drawable/rounded_rectangle_bg"
+        android:paddingHorizontal="@dimen/space_medium"
+        android:paddingVertical="@dimen/space_xsmall"
+        android:textAppearance="@style/text_style_med_header02"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/assn_name_txt"
+        app:layout_constraintTop_toBottomOf="@id/assn_name_txt"
+        tools:text="01-10-2022" />
+
+    <LinearLayout
+        android:id="@+id/group_layout"
+        android:layout_width="@dimen/match_constraint"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_medium"
+        android:layout_marginTop="@dimen/space_medium"
+        android:background="@drawable/rounded_rectangle_bg"
+        android:backgroundTint="@color/teal_200"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/space_medium"
+        android:paddingVertical="@dimen/space_xsmall"
+        app:layout_constraintStart_toEndOf="@+id/due_date_txt"
+        app:layout_constraintTop_toBottomOf="@+id/assn_name_txt">
+
+        <ImageView
+            android:layout_width="@dimen/space_vlarge"
+            android:layout_height="@dimen/space_large"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="@string/group_activity_indicator"
+            android:cropToPadding="true"
+            android:src="@drawable/vec_group_work"
+            app:tint="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/space_medium"
+            android:gravity="center_vertical"
+            android:text="@string/group_assn"
+            android:textAppearance="@style/text_style_med_header01"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/match_constraint"
+        android:layout_marginTop="@dimen/space_normal"
+        android:layout_marginBottom="@dimen/space_normal"
+        app:cardCornerRadius="@dimen/space_large"
+        app:cardElevation="@dimen/match_constraint"
+        app:layout_constraintBottom_toTopOf="@+id/div_ii"
+        app:layout_constraintTop_toBottomOf="@+id/due_date_txt"
+        app:strokeColor="@color/color_divider"
+        app:strokeWidth="@dimen/width_divider">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/detail_label_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space_normal"
+                android:layout_marginTop="@dimen/space_normal"
+                android:text="@string/details"
+                android:textAppearance="@style/text_style_med_header01"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/description_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_normal"
+                android:paddingHorizontal="@dimen/space_normal"
+                android:textAppearance="@style/text_style_desc01"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/detail_label_txt"
+                tools:text="Students compose a short narrative in response to one of a selection of stimulus items related to the concept of the monster which has been the focus of recent study." />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/send_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/space_vlarge"
+        android:layout_marginBottom="@dimen/space_vlarge"
+        android:contentDescription="@string/email"
+        android:src="@drawable/vec_email"
+        app:backgroundTint="@color/purple_500"
+        app:layout_constraintBottom_toTopOf="@id/div_ii"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:maxImageSize="@dimen/size_action_btn_icon"
+        app:tint="@color/white" />
+
+    <View
+        android:id="@+id/div_ii"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/width_divider"
+        android:background="@color/color_divider"
+        app:layout_constraintBottom_toTopOf="@+id/button_layout" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_fragment_bg"
+        android:paddingVertical="@dimen/space_normal"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/view_assn_btn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="@dimen/space_normal"
+            android:backgroundTint="@color/purple_500"
+            android:text="@string/view_assn"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

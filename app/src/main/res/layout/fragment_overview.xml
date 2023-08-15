@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_fragment_bg"
+        android:orientation="vertical"
+        android:padding="@dimen/space_normal"
+        tools:context=".main.OverviewFragment">
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="true"
+            android:elevation="@dimen/match_constraint"
+            app:cardCornerRadius="@dimen/space_medium"
+            app:strokeColor="@color/color_divider"
+            app:strokeWidth="@dimen/width_divider">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:padding="@dimen/space_normal"
+                app:layout_constraintBottom_toBottomOf="@+id/school_txt"
+                app:layout_constraintTop_toBottomOf="@+id/school_txt">
+
+                <ImageView
+                    android:id="@+id/student_img"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:contentDescription="@string/student_img"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:src="@drawable/stu_1" />
+
+                <TextView
+                    android:id="@+id/name_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/space_medium"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/student_img"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="Omar Bawaneh" />
+
+                <TextView
+                    android:id="@+id/school_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/space_medium"
+                    android:layout_marginTop="@dimen/space_xsmall"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@+id/student_img"
+                    app:layout_constraintTop_toBottomOf="@id/name_txt"
+                    tools:text="Malek Fahad School" />
+
+                <TextView
+                    android:id="@+id/grade_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/space_medium"
+                    android:layout_marginTop="@dimen/space_xsmall"
+                    android:textColor="@color/black"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toEndOf="@+id/student_img"
+                    app:layout_constraintTop_toBottomOf="@id/school_txt"
+                    tools:text="Grade 5"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/attendance_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/space_medium"
+                    android:layout_marginTop="@dimen/space_xsmall"
+                    android:textColor="@color/black"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toEndOf="@+id/student_img"
+                    app:layout_constraintTop_toBottomOf="@id/grade_txt"
+                    tools:text="95% attendance"
+                    tools:visibility="visible" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/subject_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutAnimation="@anim/layout_anim_fall_down_fast"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:itemCount="3"
+            tools:listitem="@layout/item_subject" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

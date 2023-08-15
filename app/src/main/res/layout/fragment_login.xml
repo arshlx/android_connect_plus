@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_700"
+    tools:context=".splash.LoginFragment">
+
+    <ImageView
+        android:id="@+id/splash_img"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:src="@drawable/vec_connect"
+        app:layout_constraintBottom_toTopOf="@id/login_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/vec_scholar"
+        app:layout_constraintBottom_toBottomOf="@id/splash_img"
+        app:layout_constraintEnd_toEndOf="@id/splash_img"
+        app:layout_constraintStart_toStartOf="@id/splash_img"
+        app:layout_constraintTop_toTopOf="@id/splash_img" />
+
+
+    <LinearLayout
+        android:id="@+id/login_container"
+        android:layout_width="@dimen/match_constraint"
+        android:layout_height="wrap_content"
+        android:autofillHints="@string/user_id"
+        android:orientation="vertical"
+        android:padding="@dimen/space_normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/id_edt_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/user_id"
+            android:textColorHint="@color/white"
+            app:boxBackgroundColor="@color/color_transparent"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="@color/teal_200"
+            app:boxStrokeWidth="@dimen/width_divider"
+            app:errorEnabled="true"
+            app:hintTextAppearance="@style/text_style_med_header02"
+            app:hintTextColor="@color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/id_edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textAppearance="@style/text_style_med_header02"
+                android:textColor="@color/white" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/password_edt_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_medium"
+            android:hint="@string/password"
+            android:textColorHint="@color/white"
+            app:boxBackgroundColor="@color/color_transparent"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="@color/teal_200"
+            app:boxStrokeWidth="@dimen/width_divider"
+            app:errorEnabled="true"
+            app:hintTextAppearance="@style/text_style_med_header02"
+            app:hintTextColor="@color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password_edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textAppearance="@style/text_style_med_header02"
+                android:textColor="@color/white" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_height"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/space_vlarge"
+            android:backgroundTint="@color/white"
+            android:enabled="false"
+            android:paddingVertical="@dimen/space_medium"
+            android:text="@string/log_in"
+            android:textAllCaps="false"
+            android:textColor="@color/color_divider" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

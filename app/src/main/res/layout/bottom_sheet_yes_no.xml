@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title_txt"
+        android:layout_width="@dimen/match_constraint"
+        android:layout_height="wrap_content"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:padding="@dimen/space_normal"
+        android:textAppearance="@style/text_style_lar_header01"
+        android:textSize="@dimen/title_txt_size"
+        app:layout_constraintEnd_toStartOf="@+id/close_img"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/log_out" />
+
+    <ImageView
+        android:id="@+id/close_img"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_marginEnd="@dimen/space_medium"
+        android:layout_marginTop="@dimen/space_small"
+        android:contentDescription="@string/close"
+        android:src="@drawable/vec_cross"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/black" />
+
+    <TextView
+        android:id="@+id/description_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/space_normal"
+        android:textAppearance="@style/text_style_med_header01"
+        app:layout_constraintTop_toBottomOf="@id/title_txt"
+        tools:text="@string/logout_warning" />
+
+    <View
+        android:id="@+id/div"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/width_divider"
+        android:layout_marginTop="@dimen/space_normal"
+        android:background="@color/color_divider"
+        app:layout_constraintTop_toBottomOf="@id/description_txt" />
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/no_btn"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="@dimen/match_constraint"
+        android:layout_height="@dimen/btn_height"
+        android:layout_marginHorizontal="@dimen/space_normal"
+        android:layout_marginVertical="@dimen/space_normal"
+        app:cardElevation="@dimen/match_constraint"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/yes_btn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/div">
+
+        <TextView
+            android:id="@+id/no_txt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/colorPrimaryVariant"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            tools:text="Cancel" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/yes_btn"
+        android:layout_width="@dimen/match_constraint"
+        android:layout_height="@dimen/btn_height"
+        android:layout_marginHorizontal="@dimen/space_normal"
+        app:cardCornerRadius="@dimen/space_small"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/no_btn"
+        app:layout_constraintTop_toBottomOf="@id/div"
+        app:strokeColor="?attr/colorPrimaryVariant"
+        app:strokeWidth="@dimen/width_divider">
+
+        <TextView
+            android:id="@+id/yes_txt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:text="@string/log_out"
+            android:textAllCaps="false"
+            android:textColor="@color/purple_700"
+            android:textStyle="bold" />
+    </com.google.android.material.card.MaterialCardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/space_normal"
+    android:clipToPadding="true"
+    android:elevation="@dimen/match_constraint"
+    app:cardCornerRadius="@dimen/space_medium"
+    app:strokeColor="@color/color_divider"
+    app:strokeWidth="@dimen/width_divider">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:paddingHorizontal="@dimen/space_vlarge"
+        android:paddingVertical="@dimen/space_normal">
+
+        <TextView
+            android:id="@+id/subject_txt"
+            android:layout_width="@dimen/match_constraint"
+            android:layout_height="wrap_content"
+            android:text="@string/english"
+            android:textAppearance="@style/text_style_med_header01"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/num_assn_txt"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/label_txt"
+            android:layout_width="@dimen/match_constraint"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_medium"
+            android:text="@string/assn_due"
+            android:textAppearance="@style/text_style_med_header01"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/div_i"
+            app:layout_constraintTop_toTopOf="@+id/div_i" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/due_assn_recycler"
+            android:layout_width="@dimen/match_constraint"
+            android:layout_height="@dimen/match_constraint"
+            android:layout_marginStart="@dimen/space_medium"
+            android:layout_marginTop="@dimen/space_medium"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/div_i"
+            app:layout_constraintTop_toBottomOf="@+id/label_txt"
+            tools:itemCount="3"
+            tools:listitem="@layout/item_due_assignment" />
+
+        <TextView
+            android:id="@+id/num_assn_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_normal"
+            android:textAppearance="@style/text_style_med_header01"
+            android:textSize="100sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/subject_txt"
+            tools:text="2" />
+
+        <View
+            android:id="@+id/div_i"
+            android:layout_width="@dimen/width_divider"
+            android:layout_height="@dimen/match_constraint"
+            android:layout_marginStart="@dimen/space_high"
+            android:background="@color/color_divider"
+            app:layout_constraintBottom_toBottomOf="@+id/num_assn_txt"
+            app:layout_constraintStart_toEndOf="@+id/num_assn_txt"
+            app:layout_constraintTop_toTopOf="@+id/num_assn_txt" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
+

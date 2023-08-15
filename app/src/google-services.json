@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "161890402257",
+    "project_id": "connect-plus-wsug10",
+    "storage_bucket": "connect-plus-wsug10.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:161890402257:android:13058321aadf343e772af0",
+        "android_client_info": {
+          "package_name": "com.mict.connect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "161890402257-fcfi3tffpt32v6pbnavnsos3mbep36f2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUq_v_r6bleJ-LwxclRPpyeBH6BOvQMnw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "161890402257-fcfi3tffpt32v6pbnavnsos3mbep36f2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

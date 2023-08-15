@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/assignment_txt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/text_style_med_header02"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:drawablePadding="@dimen/space_small"
+    android:gravity="center_vertical"
+    app:drawableStartCompat="@drawable/vec_bullet_point"
+    app:drawableTint="@color/color_divider"
+    tools:text="23/10  English Essay">
+
+</TextView>

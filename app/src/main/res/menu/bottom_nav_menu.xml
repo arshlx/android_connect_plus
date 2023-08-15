@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_overview"
+        android:title="@string/nav_overview"
+        android:icon="@drawable/selector_overview"/>
+    <item
+        android:id="@+id/nav_assignments"
+        android:title="@string/nav_assignments"
+        android:icon="@drawable/selector_assignments"/>
+    <item
+        android:id="@+id/nav_discussion"
+        android:title="@string/nav_discussion"
+        android:icon="@drawable/selector_discussion"/>
+    <item
+        android:id="@+id/nav_preferences"
+        android:title="@string/nav_preferences"
+        android:icon="@drawable/selector_preferences"/>
+</menu>

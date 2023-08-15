@@ -1,0 +1,440 @@
+{
+  "students": [
+    {
+      "student_name": "James",
+      "school_name": "Baulkham Hills High School",
+      "gender": "Male",
+      "grade": 6,
+      "image_url": "https://acps-connect-api.s3.ap-southeast-2.amazonaws.com/stu_james.jpg",
+      "total_days": 120,
+      "total_attendance_days": 110,
+      "subjects": [
+        {
+          "subject_name": "Mathematics",
+          "assignments": [
+            {
+              "assignment_name": "Operations with fractions",
+              "assignment_description": "Communicates and connects mathematical ideas using appropriate terminology, diagrams and symbols.",
+              "assignment_duedate": "10-21-2022",
+              "subject": "Mathematics",
+              "group_assignment": false
+            },
+            {
+              "assignment_name": "Tunnel patterns",
+              "assignment_description": "Students are given a number of diagrams representing the modelling of a geometric pattern. They draw a diagram to represent their construction of the next structure required to continue the pattern. They then complete a table of values and determine a rule to describe the pattern, providing an explanation of how they obtained the rule.",
+              "assignment_duedate": "11-11-2022",
+              "subject": "Mathematics",
+              "group_assignment": true
+            }
+          ]
+        },
+        {
+          "subject_name": "Personal Development, Health and Physical Education",
+          "assignments": [
+            {
+              "assignment_name": "Coping Strategy Scenario",
+              "assignment_description": "Students read each scenario and provide a written response suggesting a strategy for coping with this situation.",
+              "assignment_duedate": "10-28-2022",
+              "subject": "Personal Development, Health and Physical Education",
+              "group_assignment": false
+            }
+          ]
+        },
+        {
+          "subject_name": "English",
+          "assignments": [
+            {
+              "assignment_name": "Poetry analysis",
+              "assignment_description": "Students form pairs from different groups and teach their poem to the other member of the pair.  They write an individual response to the two poems explaining what each poem is about and how personification and other poetic techniques contribute to their understanding and enjoyment of the poems.",
+              "assignment_duedate": "10-28-2022",
+              "subject": "English",
+              "group_assignment": true
+            },
+            {
+              "assignment_name": "Imaginative Text",
+              "assignment_description": "Students compose a short narrative in response to one of a selection of stimulus items related to the concept of the monster which has been the focus of recent study.",
+              "assignment_duedate": "11-11-2022",
+              "subject": "English",
+              "group_assignment": false
+            }
+          ]
+        },
+        {
+          "subject_name": "Geography",
+          "assignments": [
+            {
+              "assignment_name": "Presentation",
+              "assignment_duedate": "11-04-2022",
+              "assignment_description": "Students work independently or collaboratively to create a presentation illustrating their understanding and interpretation of the stimulus statement. Stimulus statement - Our everyday lives are affected by global connections",
+              "subject": "Geography",
+              "group_assignment": false
+            }
+          ]
+        },
+        {
+          "subject_name": "History",
+          "assignments": [
+            {
+              "assignment_name": "Medieval Holidays and Festivals",
+              "assignment_description": "Students research some of the holidays and festivals of the Middle Ages and compare their relevance to medieval and modern Australian society.",
+              "assignment_duedate": "11-04-2022",
+              "subject": "History",
+              "group_assignment": false
+            }
+          ]
+        }
+      ],
+      "assignments": [
+        {
+          "assignment_name": "Operations with fractions",
+          "assignment_description": "Communicates and connects mathematical ideas using appropriate terminology, diagrams and symbols.",
+          "assignment_duedate": "10-21-2022",
+          "subject": "Mathematics",
+          "group_assignment": false
+        },
+        {
+          "assignment_name": "Coping Strategy Scenario",
+          "assignment_description": "Students read each scenario and provide a written response suggesting a strategy for coping with this situation.",
+          "assignment_duedate": "10-28-2022",
+          "subject": "Personal Development, Health and Physical Education",
+          "group_assignment": false
+        },
+        {
+          "assignment_name": "Poetry analysis",
+          "assignment_description": "Students form pairs from different groups and teach their poem to the other member of the pair.  They write an individual response to the two poems explaining what each poem is about and how personification and other poetic techniques contribute to their understanding and enjoyment of the poems.",
+          "assignment_duedate": "10-28-2022",
+          "subject": "English",
+          "group_assignment": true
+        },
+        {
+          "assignment_name": "Presentation",
+          "assignment_duedate": "11-04-2022",
+          "assignment_description": "Students work independently or collaboratively to create a presentation illustrating their understanding and interpretation of the stimulus statement. Stimulus statement - Our everyday lives are affected by global connections",
+          "subject": "Geography",
+          "group_assignment": false
+        },
+        {
+          "assignment_name": "Medieval Holidays and Festivals",
+          "assignment_description": "Students research some of the holidays and festivals of the Middle Ages and compare their relevance to medieval and modern Australian society.",
+          "assignment_duedate": "11-04-2022",
+          "subject": "History",
+          "group_assignment": false
+        },
+        {
+          "assignment_name": "Imaginative Text",
+          "assignment_description": "Students compose a short narrative in response to one of a selection of stimulus items related to the concept of the monster which has been the focus of recent study.",
+          "assignment_duedate": "11-11-2022",
+          "subject": "English",
+          "group_assignment": false
+        },
+        {
+          "assignment_name": "Tunnel patterns",
+          "assignment_description": "Students are given a number of diagrams representing the modelling of a geometric pattern. They draw a diagram to represent their construction of the next structure required to continue the pattern. They then complete a table of values and determine a rule to describe the pattern, providing an explanation of how they obtained the rule.",
+          "assignment_duedate": "11-11-2022",
+          "subject": "Mathematics",
+          "group_assignment": true
+        }
+      ]
+    },
+    {
+      "student_name": "Jennifer",
+      "school_name": "Sydney Girls High School",
+      "gender": "Female",
+      "image_url": "https://acps-connect-api.s3.ap-southeast-2.amazonaws.com/stu_jennifer.jpg",
+      "grade": 4,
+      "total_days": 120,
+      "total_attendance_days": 90,
+      "subjects": [
+        {
+          "subject_name": "Mathematics",
+          "assignments": [
+            {
+              "assignment_name": "Tunnel patterns",
+              "assignment_description": "Students are given a number of diagrams representing the modelling of a geometric pattern. They draw a diagram to represent their construction of the next structure required to continue the pattern. They then complete a table of values and determine a rule to describe the pattern, providing an explanation of how they obtained the rule.",
+              "assignment_duedate": "10-21-2022",
+              "subject": "Mathematics",
+              "group_assignment": true
+            }
+          ]
+        },
+        {
+          "subject_name": "Personal Development, Health and Physical Education",
+          "assignments": [
+            {
+              "assignment_name": "Coping Strategy Scenario",
+              "assignment_description": "Students read each scenario and provide a written response suggesting a strategy for coping with this situation.",
+              "assignment_duedate": "10-28-2022",
+              "subject": "Personal Development, Health and Physical Education",
+              "group_assignment": false
+            }
+          ]
+        },
+        {
+          "subject_name": "English",
+          "assignments": [
+            {
+              "assignment_name": "Poetry analysis",
+              "assignment_description": "Students form pairs from different groups and teach their poem to the other member of the pair.  They write an individual response to the two poems explaining what each poem is about and how personification and other poetic techniques contribute to their understanding and enjoyment of the poems.",
+              "assignment_duedate": "10-28-2022",
+              "subject": "English",
+              "group_assignment": true
+            },
+            {
+              "assignment_name": "Imaginative Text",
+              "assignment_description": "Students compose a short narrative in response to one of a selection of stimulus items related to the concept of the monster which has been the focus of recent study.",
+              "assignment_duedate": "11-04-2022",
+              "subject": "English",
+              "group_assignment": false
+            },
+            {
+              "assignment_name": "Life writing",
+              "assignment_description": "Students select a piece of their writing for a life writing competition. They include an evaluation of the merits and appropriateness of the piece of writing in relation to audience, purpose, ideas, style, language forms and features, and textual structure.",
+              "assignment_duedate": "11-11-2022",
+              "subject": "English",
+              "group_assignment": false
+            }
+          ]
+        },
+        {
+          "subject_name": "History",
+          "assignments": [
+            {
+              "assignment_name": "Nile River Descriptive Report",
+              "assignment_description": "Students are to write a one-page descriptive report of life along the Nile.",
+              "assignment_duedate": "10-28-2022",
+              "subject": "History",
+              "group_assignment": false
+            },
+            {
+              "assignment_name": "Medieval Holidays and Festivals",
+              "assignment_description": "Students research some of the holidays and festivals of the Middle Ages and compare their relevance to medieval and modern Australian society.",
+              "assignment_duedate": "11-04-2022",
+              "subject": "History",
+              "group_assignment": false
+            }
+          ]
+        },
+        {
+          "subject_name": "Geography",
+          "assignments": [
+            {
+              "assignment_name": "Presentation",
+              "assignment_duedate": "11-04-2022",
+              "assignment_description": "Students work independently or collaboratively to create a presentation illustrating their understanding and interpretation of the stimulus statement. Stimulus statement - Our everyday lives are affected by global connections",
+              "subject": "Geography",
+              "group_assignment": false
+            }
+          ]
+        }
+      ],
+      "assignments": [
+        {
+          "assignment_name": "Tunnel patterns",
+          "assignment_description": "Students are given a number of diagrams representing the modelling of a geometric pattern. They draw a diagram to represent their construction of the next structure required to continue the pattern. They then complete a table of values and determine a rule to describe the pattern, providing an explanation of how they obtained the rule.",
+          "assignment_duedate": "10-21-2022",
+          "subject": "Mathematics",
+          "group_assignment": true
+        },
+        {
+          "assignment_name": "Coping Strategy Scenario",
+          "assignment_description": "Students read each scenario and provide a written response suggesting a strategy for coping with this situation.",
+          "assignment_duedate": "10-28-2022",
+          "subject": "Personal Development, Health and Physical Education",
+          "group_assignment": false
+        },
+        {
+          "assignment_name": "Poetry analysis",
+          "assignment_description": "Students form pairs from different groups and teach their poem to the other member of the pair.  They write an individual response to the two poems explaining what each poem is about and how personification and other poetic techniques contribute to their understanding and enjoyment of the poems.",
+          "assignment_duedate": "10-28-2022",
+          "subject": "English",
+          "group_assignment": true
+        },
+        {
+          "assignment_name": "Presentation",
+          "assignment_duedate": "11-04-2022",
+          "assignment_description": "Students work independently or collaboratively to create a presentation illustrating their understanding and interpretation of the stimulus statement. Stimulus statement - Our everyday lives are affected by global connections",
+          "subject": "Geography",
+          "group_assignment": false
+        },
+        {
+          "assignment_name": "Nile River Descriptive Report",
+          "assignment_description": "Students are to write a one-page descriptive report of life along the Nile.",
+          "assignment_duedate": "11-04-2022",
+          "subject": "History",
+          "group_assignment": false
+        },
+        {
+          "assignment_name": "Imaginative Text",
+          "assignment_description": "Students compose a short narrative in response to one of a selection of stimulus items related to the concept of the monster which has been the focus of recent study.",
+          "assignment_duedate": "11-04-2022",
+          "subject": "English",
+          "group_assignment": false
+        },
+        {
+          "assignment_name": "Medieval Holidays and Festivals",
+          "assignment_description": "Students research some of the holidays and festivals of the Middle Ages and compare their relevance to medieval and modern Australian society.",
+          "assignment_duedate": "11-04-2022",
+          "subject": "History",
+          "group_assignment": false
+        },
+        {
+          "assignment_name": "Life writing",
+          "assignment_description": "Students select a piece of their writing for a life writing competition. They include an evaluation of the merits and appropriateness of the piece of writing in relation to audience, purpose, ideas, style, language forms and features, and textual structure.",
+          "assignment_duedate": "11-11-2022",
+          "subject": "English",
+          "group_assignment": false
+        }
+      ]
+    },
+    {
+      "student_name": "Robert",
+      "school_name": "Baulkham Hills High School",
+      "gender": "Male",
+      "image_url": "https://acps-connect-api.s3.ap-southeast-2.amazonaws.com/stu_robert.jpg",
+      "grade": 5,
+      "total_days": 120,
+      "total_attendance_days": 95,
+      "subjects": [
+        {
+          "subject_name": "Mathematics",
+          "assignments": [
+            {
+              "assignment_name": "Operations with fractions",
+              "assignment_description": "Communicates and connects mathematical ideas using appropriate terminology, diagrams and symbols.",
+              "assignment_duedate": "10-28-2022",
+              "subject": "Mathematics",
+              "group_assignment": false
+            },
+            {
+              "assignment_name": "Tunnel patterns",
+              "assignment_description": "Students are given a number of diagrams representing the modelling of a geometric pattern. They draw a diagram to represent their construction of the next structure required to continue the pattern. They then complete a table of values and determine a rule to describe the pattern, providing an explanation of how they obtained the rule.",
+              "assignment_duedate": "11-11-2022",
+              "subject": "Mathematics",
+              "group_assignment": true
+            }
+          ]
+        },
+        {
+          "subject_name": "English",
+          "assignments": [
+            {
+              "assignment_name": "Poetry analysis",
+              "assignment_description": "Students form pairs from different groups and teach their poem to the other member of the pair.  They write an individual response to the two poems explaining what each poem is about and how personification and other poetic techniques contribute to their understanding and enjoyment of the poems.",
+              "assignment_duedate": "10-28-2022",
+              "subject": "English",
+              "group_assignment": true
+            },
+            {
+              "assignment_name": "Imaginative Text",
+              "assignment_description": "Students compose a short narrative in response to one of a selection of stimulus items related to the concept of the monster which has been the focus of recent study.",
+              "assignment_duedate": "11-04-2022",
+              "subject": "English",
+              "group_assignment": false
+            }
+          ]
+        },
+        {
+          "subject_name": "History",
+          "assignments": [
+            {
+              "assignment_name": "Medieval Holidays and Festivals",
+              "assignment_description": "Students research some of the holidays and festivals of the Middle Ages and compare their relevance to medieval and modern Australian society.",
+              "assignment_duedate": "11-04-2022",
+              "subject": "History",
+              "group_assignment": false
+            },
+            {
+              "assignment_name": "Nile River Descriptive Report",
+              "assignment_description": "Students are to write a one-page descriptive report of life along the Nile.",
+              "assignment_duedate": "11-11-2022",
+              "subject": "History",
+              "group_assignment": false
+            }
+          ]
+        },
+        {
+          "subject_name": "Science",
+          "assignments": [
+            {
+              "assignment_name": "Vertebrate Poster",
+              "assignment_description": "Students gather and summarise information about a named vertebrate using a range of sources.",
+              "assignment_duedate": "11-11-2022",
+              "subject": "Science",
+              "group_assignment": true
+            }
+          ]
+        },
+        {
+          "subject_name": "Geography",
+          "assignments": [
+            {
+              "assignment_name": "Presentation",
+              "assignment_duedate": "11-04-2022",
+              "assignment_description": "Students work independently or collaboratively to create a presentation illustrating their understanding and interpretation of the stimulus statement. Stimulus statement - Our everyday lives are affected by global connections",
+              "subject": "Geography",
+              "group_assignment": false
+            }
+          ]
+        }
+      ],
+      "assignments": [
+        {
+          "assignment_name": "Operations with fractions",
+          "assignment_description": "Communicates and connects mathematical ideas using appropriate terminology, diagrams and symbols.",
+          "assignment_duedate": "10-28-2022",
+          "subject": "Mathematics",
+          "group_assignment": false
+        },
+        {
+          "assignment_name": "Poetry analysis",
+          "assignment_description": "Students form pairs from different groups and teach their poem to the other member of the pair.  They write an individual response to the two poems explaining what each poem is about and how personification and other poetic techniques contribute to their understanding and enjoyment of the poems.",
+          "assignment_duedate": "10-28-2022",
+          "subject": "English",
+          "group_assignment": true
+        },
+        {
+          "assignment_name": "Medieval Holidays and Festivals",
+          "assignment_description": "Students research some of the holidays and festivals of the Middle Ages and compare their relevance to medieval and modern Australian society.",
+          "assignment_duedate": "11-04-2022",
+          "subject": "History",
+          "group_assignment": false
+        },
+        {
+          "assignment_name": "Presentation",
+          "assignment_duedate": "11-04-2022",
+          "assignment_description": "Students work independently or collaboratively to create a presentation illustrating their understanding and interpretation of the stimulus statement. Stimulus statement - Our everyday lives are affected by global connections",
+          "subject": "Geography",
+          "group_assignment": false
+        },
+        {
+          "assignment_name": "Nile River Descriptive Report",
+          "assignment_description": "Students are to write a one-page descriptive report of life along the Nile.",
+          "assignment_duedate": "11-04-2022",
+          "subject": "History",
+          "group_assignment": false
+        },
+        {
+          "assignment_name": "Imaginative Text",
+          "assignment_description": "Students compose a short narrative in response to one of a selection of stimulus items related to the concept of the monster which has been the focus of recent study.",
+          "assignment_duedate": "11-04-2022",
+          "subject": "English",
+          "group_assignment": false
+        },
+        {
+          "assignment_name": "Vertebrate Poster",
+          "assignment_description": "Students gather and summarise information about a named vertebrate using a range of sources.",
+          "assignment_duedate": "11-11-2022",
+          "subject": "Science",
+          "group_assignment": true
+        },
+        {
+          "assignment_name": "Tunnel patterns",
+          "assignment_description": "Students are given a number of diagrams representing the modelling of a geometric pattern. They draw a diagram to represent their construction of the next structure required to continue the pattern. They then complete a table of values and determine a rule to describe the pattern, providing an explanation of how they obtained the rule.",
+          "assignment_duedate": "11-11-2022",
+          "subject": "Mathematics",
+          "group_assignment": true
+        }
+      ]
+    }
+  ]
+}
