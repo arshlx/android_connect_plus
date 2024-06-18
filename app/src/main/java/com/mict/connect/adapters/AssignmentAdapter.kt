@@ -6,11 +6,11 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.RecyclerView
+import com.google.gson.Gson
 import com.mict.connect.databinding.ItemAssignmentBinding
 import com.mict.connect.global_objects.Constants
 import com.mict.connect.main.AssignmentDetailActivity
 import com.mict.connect.model.Assignment
-import com.google.gson.Gson
 
 class AssignmentAdapter(
     private val context: Context,

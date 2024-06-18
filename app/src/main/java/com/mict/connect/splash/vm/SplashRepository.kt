@@ -25,7 +25,6 @@ class SplashRepository {
         } catch (e: Exception) {
             e.printStackTrace()
         }
-
         return Pair(TaskStatus.SUCCESS, studentList)
     }
 
